@@ -1423,3 +1423,147 @@ Stack trace:
 #31 {main}
 REQUEST_URI=/trackstar/index.php?r=issue/create&pid=1
 ---
+2013/04/05 13:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usersd".' in /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usersd')
+#1 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tracktracker/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tracktracker/usersd
+---
+2013/04/05 13:56:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not exist.' in /var/www/tracktracker/protected/controllers/IssueController.php:42
+Stack trace:
+#0 /var/www/tracktracker/protected/controllers/IssueController.php(32): IssueController->loadProject(NULL)
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#10 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/create')
+#11 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/tracktracker/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/tracktracker/issue/create
+---
+2013/04/05 14:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create.".' in /var/www/tracktracker/framework/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/CController.php(270): CController->missingAction('create.')
+#1 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('create.')
+#2 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create.')
+#3 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/tracktracker/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/tracktracker/user/create.
+---
+2013/04/05 15:30:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/tracktracker/framework/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#3 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/tracktracker/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/tracktracker/user/login
+---
+2013/04/05 15:30:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tracktracker/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tracktracker/login
+---
+2013/04/05 16:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#1 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/tracktracker/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tracktracker/users
+---
+2013/04/05 16:50:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/tracktracker/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tracktracker/user/admin
+HTTP_REFERER=http://127.0.0.1/tracktracker/user/update/6
+---
+2013/04/05 16:51:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/tracktracker/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tracktracker/user/admin
+---
+2013/04/05 16:51:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/tracktracker/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tracktracker/user/admin
+---
+2013/04/05 16:55:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/tracktracker/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tracktracker/user/admin
+---
+2013/04/05 16:56:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/tracktracker/framework/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/tracktracker/framework/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/tracktracker/framework/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/tracktracker/framework/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/tracktracker/framework/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/tracktracker/framework/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/tracktracker/framework/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/tracktracker/framework/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/tracktracker/framework/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/tracktracker/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/tracktracker/user/admin
+HTTP_REFERER=http://127.0.0.1/tracktracker/user
+---

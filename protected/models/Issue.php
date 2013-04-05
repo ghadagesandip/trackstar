@@ -17,7 +17,7 @@
  * @property string $update_time
  * @property integer $update_user_id
  */
-class Issue extends CActiveRecord
+class Issue extends TrackStarActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
